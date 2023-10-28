@@ -1,0 +1,1052 @@
+@import url('https://rsms.me/inter/inter.css');
+
+/*VERSION PC*/
+
+/*systeme de scrooll smooth*/
+html {
+	scroll-behavior: smooth;
+	}
+
+	/*mise en place de la police*/
+body {
+	font-family: 'Inter', sans-serif;
+}
+
+img {
+
+	width: 100px;
+	
+	}
+
+
+	/* barre de navigation*/
+.navbar {
+	background-color: #777788;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%; 
+	box-shadow: 0 4px 4px 0 rgb(76, 76, 76);
+	z-index: 2;
+	}
+	
+	/*liens dans la barre de bav*/
+	.navbar .navlinks{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+	}
+	/*logo*/
+	.logo{
+		width: 150px;
+	}
+
+	
+	/* Liens dans la barre de nav */
+	.navbar a {
+		color: #0D1B2A;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		text-shadow: 1px 1px 2px rgb(55, 55, 55);
+	}
+
+
+	/* changement couleur texte quand on passe la souris dessus */
+	.navbar a:hover {
+	color: white;
+	}
+
+
+	
+	/* Main content */
+	main {
+	margin-top: 90px; /* Add a top margin to avoid content overlay */
+	}	
+
+	/*accueil*/
+	#accueil{
+		display: flex; 
+		flex-direction: column;
+		align-items: center;
+		background-color: #415A77;
+		margin: 3% 2% auto 2%;
+		font-size: 1.4em;
+		font-weight: 600;
+		color: #fff;
+		text-align: center;
+		justify-content: center;
+		border-radius: 10px;
+		box-shadow: 0 2px 4px 0 rgb(76, 76, 76);
+	}
+	/*accueil titre*/
+	#accueil h2{
+	text-shadow: 1px 1px 2px black
+	}
+	/*accueil image*/
+	#accueil img{
+		display: flex;
+		justify-content: center;
+		width : 20%; height: auto;
+	}
+
+	/*texte de accueil*/
+	#accueil p{
+	margin: auto 50px 20px 50px;
+	text-shadow: 1px 1px 2px black
+	}
+
+	/*histoire*/
+	#histoire{
+		display: flex; 
+		flex-direction: column;
+		background-color: #415A77;
+		margin: 2% 2% auto 2%;
+		font-size: 1.4em;
+		font-weight: 600;
+		color: #fff;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		border-radius: 10px;
+		box-shadow: 0 2px 4px 0 rgb(76, 76, 76);
+}
+/*titre histoire*/
+#histoire h2{
+	text-shadow: 1px 1px 2px black
+}
+/*image histoire*/
+.img_histoire{
+	width : 40%; height: auto;
+}
+/*texte histoire*/
+.text_histoire{
+margin: auto 2em auto 2em;
+text-shadow: 1px 1px 2px black
+}
+/*regles*/
+#regles{
+	display: flex; 
+	flex-direction: column;
+	background-color: #415A77;
+	margin: 2% 2% auto 2%;
+	font-size: 1.4em;
+	font-weight: 600;
+	color: #fff;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px 0 rgb(76, 76, 76);
+}
+/*image regles*/
+.img_regles{
+	width : 40%; height: auto;
+}
+/*titre regles*/
+#regles h2{
+	text-shadow: 1px 1px 2px black
+}
+/*texte regles*/
+.text_regles{
+	margin: auto 2em auto 2em;
+	text-shadow: 1px 1px 2px black
+	}
+
+
+/*Résolveur du sudoku*/
+
+#resolveur{
+	display: flex; 
+	flex-direction: column;
+	background-color: #415A77;
+	margin: 2% 2% 2% 2%;
+	font-size: 1.4em;
+	font-weight: 600;
+	color: #fff;
+	text-align: center;
+	justify-content: center;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px 0 rgb(76, 76, 76);
+
+}
+
+.solveur{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: #0D1B2A;
+	margin: 3% 2% 0.5% 2%;
+	padding: 1em;
+	border-radius: 10px;
+}
+
+
+.solveurchoix{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #0D1B2A;
+	margin: 3% 2% 0.5% 2%;
+	padding: 1em;
+	border-radius: 10px;
+}
+
+.resultat{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #0D1B2A;
+	margin: 3% 2% 0.5% 2%;
+	padding: 1em;
+	border-radius: 10px;
+}
+
+/*bouton importation*/
+.bouton {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #415A77;
+}
+
+
+.bouton:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.solveur .choix_resu{
+	display: flex;
+	flex-direction: column;
+}
+/*choix dépliant selection complet ou partiel*/
+.solveur .choix_resu select{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	outline: 0;
+	background: #415A77;
+	color: #fff;
+	padding: 4px;
+	border-radius: 9px;
+}
+
+.solveur .solveurchoix select{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	outline: 0;
+	background: #415A77;
+	color: #fff;
+	padding: 4px;
+	border-radius: 9px;
+}
+
+.img_selection{
+	width : 50%; height: auto;
+}
+
+.img_fin{
+	width : 50%; height: auto;
+}
+
+
+
+/*barre de progression*/
+
+:root {
+	--success: #777788;
+	--progress: #777788;
+  }
+  
+  .progressbar-wrapper {
+	background-color: #415A77;
+	color: white;
+	border-radius: 15px;
+	width: 100%;
+  }
+  
+  .progressbar {
+	background-color: var(--progress);
+	color: white;
+	padding: 1rem;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 15px;
+  }
+  
+  .progressbar[title="downloading"] {
+	 background-color: var(--progress);
+  }
+  
+  .progressbar[title="downloaded"] {
+	 background-color: var(--success);
+  }
+	
+  .mp4 {
+	width: 67%;
+  }
+  
+
+
+
+  /*sites*/
+ 
+#sites{
+	display: flex; 
+	flex-direction: column;
+	background-color: #415A77;
+	margin: 3% 2% auto 2%;
+	font-size: 1.4em;
+	font-weight: 600;
+	color: #fff;
+	text-align: center;
+	justify-content: center;
+	box-shadow: 0 2px 4px 0 rgb(76, 76, 76);
+}
+/*titre */
+.top_sites{
+	display: flex;
+	flex-direction: column;
+	text-shadow: 1px 1px 2px black
+}
+/*mise en page affichage site*/
+.autres_sites{
+	display: flex;
+	flex-direction: row;
+	margin: 3% 2% 0.5% 2%;
+	justify-content: space-around;
+	text-shadow: 1px 1px 2px black
+}
+
+.chess{
+	flex-direction: column;
+	background-color: #0D1B2A;
+	margin: 3% 2% 0.5% 2%;
+	padding: 1em;
+	border-radius: 10px;
+}
+
+.board{
+	flex-direction: column;
+	background-color: #0D1B2A;
+	margin: 3% 2% 0.5% 2%;
+	padding: 1em;
+	border-radius: 10px;
+}
+
+.table{
+	flex-direction: column;
+	background-color: #0D1B2A;
+	margin: 3% 2% 0.5% 2%;
+	padding: 1em;
+	border-radius: 10px;
+}
+/*jeux de societe*/
+#jeuxdesocietes{
+	display: flex; 
+	flex-direction: column;
+	background-color: #415A77;
+	margin: 3% 2% auto 2%;
+	font-size: 1.4em;
+	font-weight: 600;
+	color: #fff;
+	text-align: center;
+	justify-content: center;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px 0 rgb(76, 76, 76);
+	text-shadow: 1px 1px 2px black;
+}
+
+#imgjeux {
+	display : flex;
+	flex-direction: column;
+	margin: auto auto auto auto;
+	align-items: center;	
+	width: 20em;
+	height: auto;
+} 
+
+#hitori{
+display : flex;
+flex-direction: column;
+padding: 1em;
+margin: auto 5em auto 5em;
+align-items: center;
+}
+
+.hitorilogo{
+	flex-direction: column;
+	background-color: #0D1B2A;
+	padding: 1em;
+	border-radius: 10px;
+	width: 8em;
+	height: 5.5em;
+	}
+
+.hitorilogo p{
+	margin-top: 1px;
+}
+
+#suguru{
+	display : flex;
+flex-direction: column;
+padding: 1em;
+margin: auto 5em auto 5em;
+align-items: center;
+}
+
+.sugurulogo{
+	flex-direction: column;
+	background-color: #0D1B2A;
+	padding: 1em;
+	border-radius: 10px;
+	width: 8em;
+	height: 5.5em;
+}
+
+.sugurulogo p{
+	margin-top: 1px;
+}
+
+#binero{
+	display : flex;
+	flex-direction: column;
+	padding: 1em;
+	margin: auto 5em auto 5em;
+	align-items: center;
+}
+
+.binerologo{
+	flex-direction: column;
+	background-color: #0D1B2A;
+	padding: 1em;
+	border-radius: 10px;
+	width: 8em;
+	height: 5.5em;
+}
+
+.binerologo p{
+	margin-top: 1px;
+}
+
+
+/*mise en page footer*/
+#foot {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: #777788;
+	color: rgb(55, 55, 55);
+	margin-top: 25px;
+	position:relative;
+	height: 190px;
+
+	}
+	
+	#foot a {
+	display: flex;
+	flex-direction: row;
+	color: #0D1B2A;
+	padding: 14px 16px;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px rgb(55, 55, 55);
+	}
+	
+	#foot img {
+	float: right;
+	margin-left: 20px;
+	width: 250px;
+	}
+
+	#foot .liens{
+	width: 800px;
+	}
+
+#foot .ligne1{
+	display: flex;
+		flex-wrap: wrap;
+}
+
+#foot .ligne1 a{
+	flex: 1;
+	font-size: 25px;
+}
+
+
+#foot .ligne2{
+	display: flex;
+		flex-wrap: wrap;
+}
+
+#foot .ligne2 a{
+	flex: 1;
+	font-size: 25px;
+}
+
+#foot .p1{
+	display: flex;
+	text-align: center;
+
+}
+
+#foot .contact{
+	margin-left: 70px;
+}
+
+#foot .contact p{
+	font-size: 20px;
+	font-weight: 550;
+}
+
+#foot .image{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position:absolute;
+	right: 5px;
+	top:10px;
+}
+
+
+
+
+/*________________________________________________________________________________________________________________________________________*/
+/*________________________________________________________________________________________________________________________________________*/
+/*________________________________________________________________________________________________________________________________________*/
+/*________________________________________________________________________________________________________________________________________*/
+/*________________________________________________________________________________________________________________________________________*/
+
+
+/*VERSION MOBILE*/
+
+/*tout le code est nomé pareil mais avec des paramètre différentes, ici il n'y a pas beaucoup de commentaires*/
+
+@media screen and (max-width: 700px){
+	html {
+		scroll-behavior: smooth;
+	  }
+	
+	body {
+		font-family: 'Inter', sans-serif;
+	}
+	
+	img {
+	
+		width: 100px;
+	  
+	  }
+	
+
+	  .navbar{
+		display: flex;
+		flex-direction: column;
+		width: 100%; /* Full width */
+		background-color: #777788;
+		overflow: hidden;
+		position: fixed; /* Set the navbar to fixed position */
+		top: 0; /* Position the navbar at the top of the page */
+		box-shadow: 0 4px 4px 0 rgb(76, 76, 76);
+		z-index: 3;
+	  }
+
+
+	
+	.navbar .navlinks{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		font-size: 11px;
+	}
+
+
+	.logo{
+		display: none;
+		right: 0;
+		top: 0;
+		width: 150px;
+
+	}
+
+	
+	/* Liens dans la barre de nav */
+	.navbar a {
+		color: #0D1B2A;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		text-shadow: 1px 1px 2px rgb(55, 55, 55);
+	}
+
+
+	/* changement couleur texte quand on passe la souris dessus */
+	.navbar a:hover {
+	color: white;
+	}
+
+
+
+	  /* Main content */
+	  main {
+		margin-top: 90px; /* Add a top margin to avoid content overlay */
+	  }	
+	
+	  #accueil{
+			background-color: #415A77;
+			margin:-50px  0% 0% 0%;
+			padding:10% 0 20% 0;
+			font-size: 2em;
+			font-weight: 600;
+			color: #fff;
+			text-align: center;
+			justify-content: center;
+			border-radius: 0px;
+			box-shadow: 0 2px 4px 0 rgb(76, 76, 76);
+
+	  }
+	
+	  #accueil .image_acc{
+			display: flex;
+			position: absolute;
+			justify-content: center;
+			width:100%;
+			opacity: 30%;
+			z-index: 1;
+	  }
+	
+	  #accueil p{
+		font-size: 70%;
+		z-index: 2;
+	  }
+	
+	  #histoire{
+		display: flex;
+		flex-direction: column;
+		background-color: #415A77;
+		margin: 2% 0% 0% 0%;
+		padding:1% 0 20% 0;
+		font-size: 2em;
+		font-weight: 600;
+		color: #fff;
+		text-align: center;
+		justify-content: center;
+		border-radius: 0px;
+		box-shadow: 0 2px 4px 0 rgb(76, 76, 76);
+		position:relative;
+	}
+	
+	
+	.img_histoire{
+		position: absolute;
+		justify-content: center;
+		width:100%;
+		opacity: 30%;
+		
+		left: 0;
+		z-index: 1;
+	}
+	
+	.text_histoire{
+		font-size: 70%;
+		z-index: 2;
+	}
+	
+	#regles{
+		display: flex;
+		flex-direction: column;
+		background-color: #415A77;
+		margin: 2% 0% 0% 0%;
+		padding:1% 0 20% 0;
+		font-size: 2em;
+		font-weight: 600;
+		color: #fff;
+		text-align: center;
+		justify-content: center;
+		border-radius: 0px;
+		box-shadow: 0 2px 4px 0 rgb(76, 76, 76);
+		position:relative;
+	}
+	
+	.img_regles{
+		position: absolute;
+		justify-content: center;
+		width:100%;
+		opacity: 30%;
+		
+		left: 0;
+		z-index: 1;
+	}
+	
+	.text_regles{
+		font-size: 70%;
+		z-index: 2;
+		}
+	
+	/*Résolveur du sudoku*/
+
+#resolveur{
+	display: flex; 
+	flex-direction: column;
+	background-color: #415A77;
+	margin: 2% 0 2% 0;
+	font-size: 1.4em;
+	font-weight: 600;
+	color: #fff;
+	text-align: center;
+	justify-content: center;
+	border-radius: 0;
+
+	box-shadow: 0 2px 4px 0 rgb(76, 76, 76);
+
+}
+
+.solveur{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #0D1B2A;
+	margin: 3% 2% 0.5% 2%;
+	padding: 1em;
+	border-radius: 10px;
+}
+
+
+.solveurchoix{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #0D1B2A;
+	margin: 3% 2% 0.5% 2%;
+	padding: 1em;
+	border-radius: 10px;
+}
+
+.resultat{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #0D1B2A;
+	margin: 3% 2% 0.5% 2%;
+	padding: 1em;
+	border-radius: 10px;
+}
+
+
+.bouton {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #415A77;
+}
+
+
+.bouton:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.solveur .choix_resu{
+	display: flex;
+	flex-direction: column;
+}
+
+.solveur .choix_resu select{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	outline: 0;
+	background: #415A77;
+	color: #fff;
+	padding: 4px;
+	border-radius: 9px;
+}
+
+.solveur .solveurchoix select{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	outline: 0;
+	background: #415A77;
+	color: #fff;
+	padding: 4px;
+	border-radius: 9px;
+}
+
+.img_selection{
+	width : 50%; height: auto;
+}
+
+.img_fin{
+	width : 50%; height: auto;
+}
+
+
+
+/*barre de progression*/
+
+:root {
+	--success: #777788;
+	--progress: #777788;
+  }
+  
+  .progressbar-wrapper {
+	background-color: #415A77;
+	color: white;
+	border-radius: 15px;
+	width: 100%;
+  }
+  
+  .progressbar {
+	background-color: var(--progress);
+	color: white;
+	padding: 1rem;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 15px;
+  }
+  
+  .progressbar[title="downloading"] {
+	 background-color: var(--progress);
+  }
+  
+  .progressbar[title="downloaded"] {
+	 background-color: var(--success);
+  }
+	
+  .mp4 {
+	width: 67%;
+  }
+  
+
+	
+	#sites{
+		display: flex; 
+		flex-direction: column;
+		background-color: #415A77;
+		margin: 2% 0 2% 0;
+		font-size: 1.4em;
+		font-weight: 600;
+		color: #fff;
+		text-align: center;
+		justify-content: center;
+		box-shadow: 0 2px 4px 0 rgb(76, 76, 76);
+	}
+	
+	.top_sites{
+		display: flex;
+		flex-direction: column;
+		text-shadow: 1px 1px 2px black;
+	}
+	
+	.autres_sites{
+		display: flex;
+		flex-direction: column;
+		margin: 3% 3% 2% 3%;
+		text-shadow: 1px 1px 2px black
+	}
+	
+	.chess{
+		flex-direction: column;
+		background-color: #0D1B2A;
+		margin: 3% 20% 0.5% 20%;
+		padding: 1em;
+		border-radius: 10px;
+	}
+	
+	.board{
+		flex-direction: column;
+		background-color: #0D1B2A;
+		margin: 3% 20% 0.5% 20%;
+		padding: 1em;
+		border-radius: 10px;
+	}
+	
+	.table{
+		flex-direction: column;
+		background-color: #0D1B2A;
+		margin: 3% 20% 0.5% 20%;
+		padding: 1em;
+		border-radius: 10px;
+	}
+	
+	#jeuxdesocietes{
+		display: flex; 
+		flex-direction: column;
+		background-color: #415A77;
+		margin: 3% 0 2% 0;
+		font-size: 1.4em;
+		font-weight: 600;
+		color: #fff;
+		text-align: center;
+		justify-content: center;
+		border-radius: 0;
+		box-shadow: 0 2px 4px 0 rgb(76, 76, 76);
+		text-shadow: 1px 1px 2px black;
+	}
+	
+	#imgjeux {
+		display : flex;
+		flex-direction: column;
+		margin: auto auto auto auto;
+		align-items: center;	
+		width: 100%;
+		height: auto;
+		opacity: 40%;
+	} 
+	
+	#hitori{
+	display : flex;
+	flex-direction: column;
+	padding: 1em;
+	margin: auto 5% auto 5%;
+	align-items: center;
+	}
+	
+	.hitorilogo{
+		flex-direction: column;
+		background-color: #0D1B2A;
+		padding: 1em;
+		border-radius: 10px;
+		width: 8em;
+		height: 5.5em;
+		}
+	
+	.hitorilogo p{
+		margin-top: 1px;
+	}
+	
+	#suguru{
+		display : flex;
+		flex-direction: column;
+		padding: 1em;
+		margin: auto 5% auto 5%;
+		align-items: center;
+	}
+	
+	.sugurulogo{
+		flex-direction: column;
+		background-color: #0D1B2A;
+		padding: 1em;
+		border-radius: 10px;
+		width: 8em;
+		height: 5.5em;
+	}
+	
+	.sugurulogo p{
+		margin-top: 1px;
+	}
+	
+	#binero{
+		display : flex;
+		flex-direction: column;
+		padding: 1em;
+		margin: auto 5% auto 5%;
+		align-items: center;
+	}
+	
+	.binerologo{
+		flex-direction: column;
+		background-color: #0D1B2A;
+		padding: 1em;
+		border-radius: 10px;
+		width: 8em;
+		height: 5.5em;
+	}
+	
+	.binerologo p{
+		margin-top: 1px;
+	}
+	
+	
+	#foot {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #777788;
+		color: rgb(55, 55, 55);
+		margin-top: 25px;
+		height: 25%;
+	
+	  }
+	  
+	  #foot a {
+		display: flex;
+		flex-direction: row;
+		color: #0D1B2A;
+		padding: 14px 16px;
+		text-decoration: none;
+		text-shadow: 1px 1px 2px rgb(55, 55, 55);
+	  }
+	  	
+	  #foot .liens{
+		width: 400px;
+	  }
+	
+	#foot .ligne1{
+		display: flex;
+		flex-direction: row;
+		padding: 0 10% 0 10%;
+	}
+	
+	#foot .ligne1 a{
+		flex: 1;
+		font-size: 20px;
+	}
+	
+	
+	#foot .ligne2{
+		display: flex;
+		flex-direction: row;
+		padding: 0 10% 0 10%;
+		text-align: center;
+	}
+	
+	#foot .ligne2 a{
+		flex: 1;
+		font-size: 20px;
+	}
+	
+	#foot .p1{
+		display: flex;
+		text-align: center;
+	
+	}
+	
+	#foot .contact{
+		margin:0 1% 0 60%;
+	}
+	
+	#foot .contact p{
+		font-size: 70%;
+		font-weight: 550;
+		text-align: center;
+	}
+	
+	#foot .image{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		right: 5px;
+		top:10px;
+	}
+
+	#foot .image img{
+		width: 40%;
+		padding-right: 50%;
+	}
+
+	#foot .image p{
+		margin: 0 10% 5% 10%;
+		font-weight: 600;
+		font-size: 70%;
+	}
+
+}

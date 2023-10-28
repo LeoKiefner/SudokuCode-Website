@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style1.css">
+
+		<title>Sudo Code</title>
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="navlinks" >
+						<a href="#accueil">Accueil</a>
+						<a href="#histoire">Histoire</a>
+						<a href="#regles">Règles</a>
+					<img class="logo" src="Images/logosudo.png" alt="Logo du site">
+						<a href="#resolveur">Grilles</a>
+						<a href="#sites">Sites</a>
+						<a href="#jeuxdesocietes">Jeux de societes</a>
+			</div>
+		</nav>
+			
+		<main>
+			<section id="accueil">
+						<img class="image_acc" src="Images/image_accueil.png" alt="image accueil">
+						<h2>Sudo'Code</h2>
+						<p>
+							Ce site internet est un site vous permmettant de resoudre des Sudokus que vous importerez ou en remplissant une grille sur notre site. <br>
+							Vous pouvez aussi decouvrir d’autres casse-tetes similaires au Sudoku. <br>
+							Voir l’histoire du Sudoku ou meme acceder a un autre site proposant des jeux en lignes.
+						</p>	
+			</section>
+				<section id="histoire">
+						<h2>
+							Histoire
+						</h2>
+						<p class="text_histoire">
+							Dans sa version moderne, le Sudoku est élaboré en 1979 par l'architecte américain Howard Garns, qui parvient à en vendre le principe, sous le nom de Number Place, aux journaux Dell Pencil Puzzles et Word Games.<br>
+							Alors qu'il travaille dans une imprimerie, Maki Kaji découvre le casse-tête dans un magazine américain.<br>
+							Le Japonais le fait ensuite figurer en 1980 dans le magazine nippon Puzzle Tsushin Nikoli, avant de fonder la maison d'édition Nikoli.<br>
+							En 1986, Nikoli limite le nombre de cases à remplir à 30 et situe celles-ci autour du centre de la grille, deux innovations qui vont assurer la popularité du Sudoku au Japon. <br>
+							Ce n'est qu'en 1997 que le jeu s'exporte au-delà des frontières de l'archipel, après les vacances d'un juge néo-zélandais au Japon, Wayne Gould. <br>
+							Celui-ci, qui aperçoit le casse-tête dans un magasin de Tokyo, invente un logiciel capable de générer des grilles de Sudoku, qu'il se charge de proposer à des journaux. <br>
+							En novembre 2004, le quotidien britannique Times accepte finalement de publier une grille.<br>
+						</p>
+						<img class ="img_histoire" src="Images/histoire.png" alt="image histoire">
+				</section>
+
+			<section id="regles">
+					<h2>
+						Règles
+					</h2>
+					<p class="text_regles">
+						Le Sudoku est un jeu où l'on doit compléter des cases à l'aide de chiffres allant de 0 à 9, sur une grille de 9 cases sur 9. <br>
+						La règle est qu'aucun chiffre ne doit se retrouver deux fois dans la même ligne, la même colonne ou le même carré. <br>
+						Contrairement à ce que son nom indique, le Sudoku n'est pas d'origine japonaise : son ancêtre est le "carré latin", <br>
+						inventé au XVIIIe siècle par le mathématicien suisse Leonhard Euler, qui s'inspire lui-même du "carré magique" chinois. <br>
+					</p>
+					<img class="img_regles" src="Images/regles.png" alt="image regles">
+			</section>
+
+			<section id="resolveur">
+				<h2>
+					Résolveur de Sudoku
+				</h2>
+
+				<div class="solveur">
+				
+						<div class="solveurchoix">
+							<img class="img_fin" src="Images/sudoku.png" alt="image présen">
+								<p>Taille de la grille</p>
+								<form action="#">
+										<select name="taille" id="taille">
+										<option value="Complète">4x4</option>
+										<option value="Partielle">9x9</option>
+										<option value="Partielle">16x16</option>
+										</select>
+								</form>
+								<button class="bouton"
+									type="button">
+									Importer grille
+								</button>
+						</div>
+						<div class="choix_resu">
+							<form action="#">
+								<label for="resolution">Résolution</label>
+									<select name="resolution" id="resolution">
+									<option value="Complète">Complète</option>
+									<option value="Partielle">Partielle</option>
+									</select>
+							</form>
+
+							<div class="container">
+								<div class="progressbar-wrapper">
+								 <div title="downloaded" class="progressbar mp4">67%</div>
+							</div>
+						   
+								
+						   
+							</div>
+						</div>
+						<div class="resultat">
+							<img class="img_selection" src="Images/sudoku.png" alt="image sudoku">
+							<p>Grille résolue</p>
+						</div>
+				</div>
+			</section>
+
+
+
+			<section id="sites">
+				<div class="top_sites">
+				<h2>
+					Sites
+				</h2>
+				<p>
+					Voici  différents sites sur lesquels vous pouvez jouer a des jeux de societes en ligne	
+				</p>
+				</div>
+				<div class="autres_sites">
+					<div class="chess">
+						<img src="Images/chess.png" alt="image chess">
+						<p>Chess.com</p>
+					</div>
+					<div class="board">
+						<img src="Images/board.png" alt="image board">
+						<p>Board Game Arena</p>
+					</div>
+					<div class="table">
+						<img src="Images/table.png" alt="image table">
+						<p>Tabletopia</p>
+					</div>
+				</div>
+			</section>
+			
+			<section id="jeuxdesocietes">
+				<div class="top_jeux">
+				<h2>
+					Quelques jeux de societes
+				</h2>
+					<p>
+						Ci-dessous une liste de différents jeux de société similaires au Sudoku.
+					</p>
+				</div>
+
+				<div id="hitori">
+					<div class="hitorilogo">
+						<img src="Images/hitori.png" alt="image hitori">
+						<p>Hitori</p>
+					</div>
+					<div>
+					<p>
+						Hitori, venu tout droit du Japon où il remporte un succès comparable à celui du Sudoku, est un jeu aux multiples qualités. <br>
+						Ses règles simples sont assimilées en quelques instants, mais leur utilisation offre des situations toujours variées et inédites. <br>
+						Les auteurs, spécialistes des jeux de grilles, vous proposent 150 grilles, de plus, ils donnent les bonnes méthodes pour aborder ce jeu original et tout aussi captivant que son célèbre prédécesseur. <br>
+						Un livre qui s'adresse à tous et qui renouvelle complètement le jeu de logique. À lire et relire pour en apprécier toutes les subtilités de ce jeu. <br>
+					</p>
+					</div>
+				</div>
+
+				<div id="suguru">
+					<div class="sugurulogo">
+						<img src="Images/suguru.png" alt="image suguru">
+						<p>Suguru</p>
+					</div>
+					<div>
+					<p>
+						La taille de la grille peut varier. Des zones sont délimitées dans la grille principale. <br>
+						Si la zone contient 4 cases vous devez placer des nombres de 1 à 4, si la zone contient 5 cases vous devez placer des nombres de 1 à 5. <br>
+						Un même nombre ne doit pas être présents 2 fois dans la même zone. <br>
+						Une case adjacente ne peut pas contenir le même nombre même en diagonale (les zones ne comptent plus). <br>
+						Si le nombre 2 est déjà placé au milieu de la grille vous savez que les 8 cases adjacentes ne peuvent pas contenir de 2. <br>
+						Une seule solution est possible par grille. <br>
+					</p>
+					</div>
+				</div>
+
+				<div id="binero">
+					<div class="binerologo">
+						<img src="Images/binero.png" alt="image binero">
+						<p>Binero</p>
+					</div>
+					<div>
+					<p>
+						Le Binero est un dérivé du sudoku, où les cases ne contiennent que des 0 et des 1. <br>
+						Les règles sont plus simples, donc le jeu est facile à prendre en main.Voici les règles : <br>
+						- Chaque ligne et chaque colonne doit contenir autant de 1 que de 0. <br>
+						- Il ne peut pas y avoir plus de deux 0 ou deux 1 à la suite. <br>
+					</p>
+					</div>
+				</div>
+				<img id="imgjeux" src="Images/jeuxdesoc.png" alt="image jeux de societe">
+			</section>
+		</main>
+
+		<footer>
+			<div id="foot">
+					<div class="liens">
+						<div class="ligne1">
+							<a href="#accueil">Accueil</a>
+							<a href="#regles">Règles</a>
+							<a href="#sites">Sites</a>
+						</div>
+
+						<div class="ligne2">
+							<a href="#histoire">Histoire</a>
+							<a href="#resolveur">Grilles</a>
+							<a href="#jeuxdesocietes">Jeux de societes</a>
+						</div>
+					</div>
+				
+				<div class="contact">
+					<p> Nous contacter : <br>leokiefner.pro@gmail.com<br>+33 7 68 78 52 38</p>
+				</div>
+				
+				<div class="image">
+					<img src="Images/logosudo.png" alt="Logo du site">
+					<p> Copyright © 2022 Sudo Code. Tous droits réservés.</p>
+				</div>
+				
+			  </div>
+		</footer>
+	</body>
+	
+
+</html>
