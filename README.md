@@ -27,3 +27,9 @@ Malgré tout nous vous mettons 2 fichers afin de correspondre au barème.
 
 
 Réalisé par Léo Brimacombe & Léo Kiefner.
+
+![image](https://github.com/LeoKiefner/SudokuWebsite/assets/147720183/1cb4ee81-e39c-4efc-b832-4f239fe4e449)
+![image](https://github.com/LeoKiefner/SudokuWebsite/assets/147720183/50be6685-c459-4647-9d40-6f412fac9b77)
+![image](https://github.com/LeoKiefner/SudokuWebsite/assets/147720183/fda37a5a-47ae-4645-83c1-b490c3f1e31d)
+
+
